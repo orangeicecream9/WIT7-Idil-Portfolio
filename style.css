@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
+
+/* without this background colours/images will not cover full screen width */
+body {
+  margin: 0;
+}
+
+.nav-bar{
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  background-color: #c8691c;
+}
+
+
+/* setting background color */
+body {
+  background-color: #e4ceaf;
+}
+
+#hero-section,#about-section,#project-section, #contact-section{
+  margin-top: 109px;
+}
+
+/* setting background-color for contact section */
+#contact-section {
+  background-image: url('https://64.media.tumblr.com/902eea35614ebebc692293dadcbee2af/dcdc86827ae160b1-58/s2048x3072/dfcc51be3f3b14f802e33c4e416c593dc92be64d.jpg');
+  background-repeat: no-repeat;
+}
+
+ul  {
+  /* ensures underline is removed for all anchor tags in navbar*/
+  list-style: none;
+}
+.nav-list {
+  /* increase size of margin-right of unordered list by 5% ( 5% of parent's width) */
+  margin-right: 5%;
+  list-style: none;
+        font-family: "Karla", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        display: flex;
+        margin-right: 5em;
+}
+
+#nav-title,
+#about-info {
+  /* applying margin-left 5% to perfectly align portfolio and about me heading and text along left side of webpage
+  */
+  margin-left: 5%;
+
+}
+
+#nav-title-link, li>a{
+ /* setting portfolio logo and anchor tags with an li parent to size font size x-large */
+  font-size: x-large;
+}
+a{
+   /* removing default text-decoration (underline) from all anchor tags*/
+  text-decoration: none;
+}
+
+
+#nav-title-link>h2, h1{
+  font-weight: 700;
+}
+
+h1{
+  font-size: xxx-large;
+}
+
+h2.section-header, h1,.nav-links, #nav-title-link, p {
+  color: #562a0e;
+}
+
+.nav-bar, ul,
+#hero-section,
+#about-section,
+#projects-section,
+#contact-section,#image-container,#icon-container, .project-text, .my-languages, footer, #tech-stack-item
+{
+  /* applying flex-box */
+  display: flex;
+  
+}
+.nav-bar
+{
+  /* ensures that content inside nav-bar is spaced */
+  justify-content: space-between;
+}
+
+ul {
+  /* evenly spaces nav-list-items */
+  justify-content: space-around;
+  /* ul and all its children take up 25% of parent */
+  width: 30%;
+  /* align items vertically in the center of ul container*/
+}
+ul,#hero-section,
+#about-section,
+#projects-section,
+#contact-section,#icon-container, .project-text, .my-languages{
+  align-items: center;
+}
+
+body {
+  font-family:'Lemon', sans-serif;
+}
+
+.nav-links, h2.section-header
+{
+  font-weight: 500;
+}
+
+.section-header-text{
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: x-large;
+}
+h2.section-header{
+  font-size: xx-large;
+}
+.about-text{
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: x-large;
+}
+.nav-links {
+  font-size: x-large;
+}
+
+
+/* Slide in */
+.nav-links {
+  position: relative;
+}
+
+.nav-links:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffaf3f;
+}
+
+.nav-links:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+#hero-section,
+#about-section,
+#projects-section,
+#contact-section {
+  /* 100vh = 100% of view port's height i.e desktop screen */
+  height: 100vh;
+}
+
+#hero-section{
+  justify-content: center;
+}
+
+#hero-section, #projects-section, .project-text, .my-languages {
+  flex-direction: column;
+}
+#hero-section > p {
+   
+  font-size: x-large;
+}
+
+#about-info>p, #contact-info>p{
+  /* specifies height of line */
+  line-height: 2;
+  font-size: large;
+}
+
+#about-info {
+  /* width of about-info is 85% of parent */
+  width: 85%
+}
+
+#contact-info  {
+  width: 40%;
+}
+
+#image-container {
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+#image-container>img {
+  border-radius: 25px;
+  width: 35%;
+  height: 35%;
+  /* all animations (scaling) will be applied on image will be animated over a duration of 0.2 seconds */
+  transition: all .2s ease-in-out;
+}
+
+
+#image-container>img:hover {
+  /* resizes image on hover */
+  transform: scale(1.1);
+}
+
+
+#contact-section {
+  justify-content: space-around;
+}
+
+.my-languages,#contact-heading, #contact-text, #project-description, h3, form, .project-text > ul{
+  color: #ffaf3f;
+}
+
+.contact-text-container{
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: x-large;
+}
+
+.email-text{
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+#project-description {
+  /* center project description inside project-text div */
+  text-align: center;
+}
+
+input,textarea{
+  border: 2px solid #ffaf3f;
+}
+input,textarea, .grid-item{
+  border-radius: 5px;
+}
+
+input.text-input,textarea{
+  /* code to have textarea and input field be the same length */
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+width: 400px;
+}
+
+.text-input {
+  height: 30px;
+  line-height: 30px;
+  text-align: justify;
+}
+input[type="submit"]{
+  padding: 15px 50px;
+  color: #ffffff;
+  border: none;
+  background-color: #ffaf3f;
+}
+
+input[type="submit"]:hover{
+  /* change submit button color on hover */
+  background-color: #ffffff;
+  color: #ffaf3f;
+  border: 2px solid #ffaf3f;
+}
+textarea{
+  height: 200px;
+}
+
+#icon-container{
+  font-size: xx-large;
+  justify-content: center;
+  gap: 20%;
+}
+
+footer{
+  justify-content: center;
+  background-color: #78380c;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: large;
+}
+#footer-text{
+  color: #000;
+}
+
+.grid-container{
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  height: 15%;
+  width: 55%;
+}
+
+.grid-item{
+  background-color: #78380c;
+  height: 100%;
+}
+.languages-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center; 
+}
+
+.project-text-container1{
+ font-family: "Karla", sans-serif;
+ font-optical-sizing: auto;
+ font-weight: 600;
+ font-style: normal;
+}
+
+.project-text-container2{
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+ }
+ 
+
+.languages-container1{
+ padding-right: 35px;
+ font-family: "Karla", sans-serif;
+ font-optical-sizing: auto;
+ font-weight: 600;
+ font-style: normal;
+  }
+
+.languages-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.languages-container2{
+  padding-right: 35px;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.tech-stack-item{
+  margin: 0px 5px;
+}
